@@ -26,7 +26,7 @@ const makeInfo = (entities) => {
   const location = entities.location && entities.location.values[0].value;
   const date = entities.date && new Date(entities.date.values[0].milliseconds);
 
-  return `Ok. I can give you the information about thew forecast ${
+  return `Ok. I can give you the information about the forecast ${
     location ? `in ${location}` : ''
   }${date ? ` on ${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}` : ''}`;
 };
