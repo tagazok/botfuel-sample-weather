@@ -1,0 +1,19 @@
+runtime: nodejs8
+
+env_variables:
+  BOTFUEL_APP_TOKEN: "1409617939932"
+  BOTFUEL_APP_ID: "735c9bc2"
+  BOTFUEL_APP_KEY: "a227483930a6074900fe39aef330ae5d"
+  WEATHER_API_KEY: "9b7a7201fbf64c56ace100508181008"
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+network:
+  forwarded_ports:
+    - 8080

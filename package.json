@@ -1,0 +1,40 @@
+{
+  "name": "botfuel-sample-weather",
+  "version": "0.1.1",
+  "private": true,
+  "author": "sysadmin@botfuel.io",
+  "description": "Sample weather bot using botfuel-dialog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Botfuel/botfuel-sample-weather"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "botfuel-run assistant-config.js",
+    "style": "eslint .",
+    "test": "jest",
+    "train": "botfuel-train",
+    "deploy:firebase": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "botfuel-dialog": "^9.0.0",
+    "botfuel-module-adapter-assistant": "^0.2.0",
+    "dotenv": "^6.0.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^22.4.3"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}

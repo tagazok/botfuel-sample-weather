@@ -1,0 +1,5 @@
+# rename this file to .env and add your keys
+BOTFUEL_APP_TOKEN=
+BOTFUEL_APP_ID=
+BOTFUEL_APP_KEY=
+WEATHER_API_KEY=

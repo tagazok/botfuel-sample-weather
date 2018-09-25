@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "botfuel-weather"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": ["talk to Botfuel Weather"]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "botfuel-weather": {
+      "name": "botfuel-weather",
+      "url": "https://botfuel-weather.appspot.com/webhook"
+    }
+  },
+  "locale": "en"
+}
